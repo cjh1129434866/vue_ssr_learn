@@ -15,7 +15,7 @@ const devServer = {
   overlay: { // webpack编译出错则显示到网页上
     errors: true // 让报错信息可以在网页内看到，便于快速定位错误
   },
-  historyApiFallback: true,
+  historyApiFallback: true, // 用来做路径映射，如果不写页面就找不到了
   hot: true // 热加载
 }
 

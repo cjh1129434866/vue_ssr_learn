@@ -3,7 +3,13 @@
     <div id="cover"></div>
     <Header></Header>
     <Footer></Footer>
-    <Todo></Todo>
+    <router-link to="/app/123">app</router-link>
+    <!-- <router-link :to="{name: 'app'}">app</router-link> -->
+    <router-link to="/login">login</router-link>
+    <!-- <Todo></Todo> -->
+    <transition name="fade">
+      <router-view />
+    </transition>
   </div>
 </template>
 
@@ -17,6 +23,9 @@ export default {
     return {
 
     }
+  },
+  mounted () {
+    console.log(this.$route)
   },
   components: {
     Header,

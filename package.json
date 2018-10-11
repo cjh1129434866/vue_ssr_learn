@@ -17,7 +17,8 @@
   "author": "TigerChen",
   "license": "ISC",
   "dependencies": {
-    "vue": "^2.5.17"
+    "vue": "^2.5.17",
+    "vue-router": "^3.0.1"
   },
   "devDependencies": {
     "autoprefixer": "^8.1.0",
